@@ -18,27 +18,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-[Poppins] text-white bg-black">
-    <header class="absolute w-full">
-      <div class="container mx-auto py-10 text-3xl">
-        Samsangmida
-      </div>
+    <header class="absolute p-10 w-full">
+      <div class="text-3xl">Samsangmida</div>
     </header>
 
     <main>
-      <section id="section1" class="flex items-center h-screen w-full bg-[url('./hero.jpg')] bg-cover bg-center">
-        <div class="container mx-auto">
-          <h1 class="mb-5 w-7/12 text-6xl">Usable tv remote control even in the dark..</h1>
-          <h2 class="mb-10 w-3/12 font-[Nunito] text-2xl">Navigate your tv easier using your voice with our tv Voice remote Control!</h2>
-          <button class="px-5 py-2 text-2xl rounded-xl border-2 border-white">BUY NOW</button>
+      <section
+        id="section1"
+        class="flex lg:items-center lg:h-screen bg-[url('./hero.jpg')] bg-contain lg:bg-cover bg-no-repeat bg-top lg:bg-center"
+      >
+        <div class="mt-24 lg:mt-0 p-10">
+          <h1
+            class="mb-5 md:w-1/2 lg:w-7/12 text-5xl md:text-6xl md:leading-normal"
+          >
+            Usable tv remote control even in the dark..
+          </h1>
+          <h2 class="mb-10 md:w-1/2 lg:w-3/12 font-[Nunito] text-2xl">
+            Navigate your tv easier using your voice with our tv Voice remote
+            Control!
+          </h2>
+          <button
+            class="px-5 py-2 text-2xl hover:text-black hover:bg-white rounded-xl border-2 border-white hover:border-black transition ease-in-out"
+          >
+            BUY NOW
+          </button>
         </div>
       </section>
-      <section id="section2" class="flex justify-center items-center container mx-auto h-screen w-full">
-        <div class="w-6/12">
+
+      <section
+        id="section2"
+        class="flex flex-col lg:flex-row justify-center items-center lg:h-screen p-10 py-32 my-32"
+      >
+        <div class="mb-28 lg:mb-0 lg:w-6/12">
           <img src="./remote.jpg" alt="remote" />
         </div>
-        <div class="w-6/12">
-          <h2 class="mb-5 text-5xl">Aside from controlling in the dark.. It also:</h2>
-          <ul class="font-[Nunito] list-disc list-inside leading-9">
+        <div class="lg:w-6/12">
+          <h2 class="mb-5 text-4xl md:text-5xl md:leading-normal">
+            Aside from controlling in the dark.. It also:
+          </h2>
+          <ul class="font-[Nunito] text-2xl list-disc list-inside leading-10">
             <li>Libero ut venenatis imperdiet augue.</li>
             <li>Libero ut venenatis imperdiet augue.</li>
             <li>Libero ut venenatis imperdiet augue.</li>
@@ -47,20 +65,42 @@
           </ul>
         </div>
       </section>
-      <section id="section3" class="flex flex-col justify-center items-center h-screen w-full mb-20 text-black">
+
+      <section
+        id="section3"
+        class="relative flex flex-col justify-center items-center lg:h-screen p-10 py-32 my-32 text-black"
+      >
+        <h2
+          class="md:w-8/12 mb-20 text-4xl md:text-5xl text-center md:leading-normal"
+        >
+          In this video, we'll demonstrate you how it works.
+        </h2>
+        <div
+          class="w-full lg:w-[50%] max-w-[1133px] h-auto border-4 border-gray-300"
+        >
+          <video width="100%" height="100%" controls>
+            <source src="./video.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
         <div class="absolute -z-10 h-full w-full bg-white -skew-y-6"></div>
-        <h2 class="w-8/12 mb-28 text-5xl text-center">In this video, we'll demonstrate you how it works.</h2>
-        <div class="h-[543px] w-[1133px] bg-[#161F36] border-[#939393]"></div>
       </section>
-      <section id="section4" class="h-screen w-full">
-        <div class="flex flex-col justify-center items-center gap-10 container mx-auto ">
+
+      <section id="section4" class="p-10 py-32 my-32">
+        <div class="flex flex-col justify-center items-center gap-10">
           <img src="./remote.jpg" alt="remote" />
-          <div class="text-5xl text-center">
+          <div
+            class="text-4xl md:text-5xl text-center leading-normal md:leading-normal"
+          >
             <h2>Do we need to say more?</h2>
             <h2>Get this now for only..</h2>
           </div>
-          <p class="text-9xl">$20!!</p>
-          <button class="px-5 py-2 text-2xl rounded-xl border-2 border-white">BUY NOW</button>
+          <p class="text-8xl md:text-9xl">$20!!</p>
+          <button
+            class="px-5 py-2 text-2xl hover:text-black hover:bg-white rounded-xl border-2 border-white hover:border-black transition ease-in-out"
+          >
+            BUY NOW
+          </button>
         </div>
       </section>
     </main>
@@ -68,4 +108,3 @@
     <footer class="h-96"></footer>
   </body>
 </html>
- 
